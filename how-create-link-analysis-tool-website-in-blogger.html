@@ -1,0 +1,19 @@
+ <iframe width="1100" height="200" allowtransparency="true" frameborder="0" id="0b4843" scrolling="no" src="https://bailey.sh/demo/seostudio/embed.php?id=link-analysis&h=0&r=0b4843"></iframe>
+
+<script type="text/javascript">
+
+  (function(id) {
+
+    var eventMethod = (window.addEventListener ? "addEventListener" : "attachEvent"), lh = -1;
+
+    window[eventMethod](eventMethod == "attachEvent" ? "onmessage" : "message", function(e) {
+
+      if (e.data.indexOf(id + ':') != 0) return; var h = parseInt(e.data.substring(id.length + 1), 10);
+
+      if (lh != h) document.getElementById(id).style.height = h + 'px'; lh = h;
+
+    }, false);
+
+  })("0b4843");
+
+</script>
